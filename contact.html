@@ -3,20 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Eat With Phindile for collaborations, restaurant suggestions, or recipe ideas. Let's connect!">
-  <title>Contact | Eat With Phindile</title>
+  <meta name="description" content="Contact Eat With Phindile for collaborations, restaurant suggestions, or recipe ideas. Connect with a passionate food blogger in Pretoria, South Africa.">
+  <meta name="keywords" content="contact Eat With Phindile, food collaborations, recipe ideas, restaurant reviews, Pretoria, South Africa">
+  <title>Contact Eat With Phindile | Collaborations & Recipe Suggestions</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Eat With Phindile">
+  <meta property="og:description" content="Get in touch for collaborations, recipe ideas, or restaurant suggestions.">
+  <meta property="og:image" content="images/contact-og.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Eat With Phindile">
+  <meta name="twitter:description" content="Connect for collaborations, recipe ideas, or restaurant suggestions.">
+  <meta name="twitter:image" content="images/contact-og.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://phindi-studio.github.io/PaleBlos-website/contact.html">
+
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="container">
     <h1>Contact Me</h1>
     <nav role="navigation" aria-label="Main Menu">
-    <a href="index.html">Reviews</a>
+      <a href="reviews.html">Reviews</a>
       <a href="recipes.html">Recipes</a>
       <a href="make-money.html">Make Money</a>
       <a href="work.html">Work With Me</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </header>
 
@@ -30,22 +48,33 @@
       <div class="contact-grid">
         <!-- Contact Form -->
         <form action="https://formsubmit.co/phindilemariamlilwana@gmail.com" method="POST" class="contact-form">
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://phindi-studio.github.io/PaleBlos-website/thank-you.html" />
-          <input type="hidden" name="_subject" value="New message from Eat With Phindile Contact Form" />
-          <input type="text" name="_honey" style="display:none" />
+  <!-- Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false" />
 
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your Name" />
+  <!-- Redirect to thank-you page after submission -->
+  <input type="hidden" name="_next" value="https://phindi-studio.github.io/PaleBlos-website/thank-you.html" />
 
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required placeholder="your@email.com" />
+  <!-- Subject of the email received by you -->
+  <input type="hidden" name="_subject" value="New message from Eat With Phindile Contact Form" />
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+  <!-- Honeypot field for spam protection -->
+  <input type="text" name="_honey" style="display:none" />
 
-          <button type="submit" class="cta-button">Send Message</button>
-        </form>
+  <!-- Auto-response sent to the user -->
+  <input type="hidden" name="_autoresponse" value="Thank you for contacting Eat With Phindile! Your message has been received, and I will get back to you as soon as possible." />
+
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required placeholder="your@email.com" />
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+
+  <button type="submit" class="cta-button">Send Message</button>
+</form>
+
 
         <!-- Contact Info -->
         <aside class="contact-info">
@@ -61,11 +90,22 @@
     </section>
   </main>
 
-  <footer class="container">
-    <p>&copy; 2025 Eat With Phindile</p>
+  <footer>
+    <div class="container footer-container">
+      <p class="footer-text">&copy; 2025 Eat With Phindile</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/phindile.mlilwaneneverson" target="_blank" aria-label="Facebook">
+          <img src="images/iconsfacebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/phindi_mlilwana/" target="_blank" aria-label="Instagram">
+          <img src="images/iconsinstagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
+
 
 
 
