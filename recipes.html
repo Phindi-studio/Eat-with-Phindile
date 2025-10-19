@@ -1,10 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Recipes | Eat With Phindile - Easy & Delicious Recipes</title>
   <meta name="description" content="Explore delicious recipes, including creamy garlic butter mussels, and more easy dishes with Eat With Phindile.">
-  <title>Recipes | Eat With Phindile</title>
+  <meta name="keywords" content="Recipes, easy recipes, creamy mussels, garlic butter mussels, Eat With Phindile, cooking, food blog">
+  <meta name="author" content="Phindile Mlilwana">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://your-nestify-url.nestify.app/recipes.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Recipes | Eat With Phindile">
+  <meta property="og:description" content="Explore delicious recipes, including creamy garlic butter mussels, and more easy dishes with Eat With Phindile.">
+  <meta property="og:image" content="images/og-image-recipes.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-nestify-url.nestify.app/recipes.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Recipes | Eat With Phindile">
+  <meta name="twitter:description" content="Explore delicious recipes, including creamy garlic butter mussels, and more easy dishes with Eat With Phindile.">
+  <meta name="twitter:image" content="images/og-image-recipes.jpg">
+
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -13,12 +35,13 @@
     <div class="container">
       <h1>Eat With Phindile</h1>
       <nav role="navigation" aria-label="Main Menu">
-       <a href="index.html">Reviews</a>
-      <a href="recipes.html">Recipes</a>
-      <a href="make-money.html">Make Money</a>
-      <a href="work.html">Work With Me</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="recipes.html" aria-current="page">Recipes</a>
+        <a href="make-money.html">Make Money</a>
+        <a href="work.html">Work With Me</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -37,20 +60,8 @@
           <a href="mussels.html" class="cta-button">Full Recipe</a>
         </div>
       </article>
-<!----
-      <article class="recipe-item">
-        <div class="img-container">
-          <img src="images/another-recipe.jpg" alt="Another recipe description.">
-        </div>
-        <div class="recipe-text">
-          <h3>Another Recipe</h3>
-          <p>Short description of another recipe...</p>
-          <a href="another.html" class="cta-button">Full Recipe</a>
-        </div>
-      </article>
 
-      Add more recipes as needed -->
-      <p> More recipes cooming soon</p>
+      <p>More recipes coming soon!</p>
     </section>
 
     <aside class="featured-recipe">
@@ -64,10 +75,45 @@
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Eat With Phindile</p>
+  <div class="container footer-container">
+
+    <p class="footer-text">&copy; 2025 Eat With Phindile</p>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com/phindile.mlilwaneneverson" target="_blank" aria-label="Facebook">
+        <img src="images/iconsfacebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/phindi_mlilwana/" target="_blank" aria-label="Instagram">
+        <img src="images/iconsinstagram.png." alt="Instagram">
+      </a>
+      <!----
+      <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+        <img src="icons/youtube.svg" alt="YouTube">
+      </a>-->
     </div>
-  </footer>
+  </div>
+</footer>
+
+  <!-- Structured Data for Recipes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Creamy Garlic Butter Mussels",
+    "author": {
+      "@type": "Person",
+      "name": "Phindile Mlilwana"
+    },
+    "image": "images/Mussels pot.jpg",
+    "description": "This creamy garlic butter mussels recipe is rich, aromatic, and full of coastal flavor.",
+    "recipeCategory": "Main Course",
+    "keywords": "creamy mussels, garlic butter mussels, seafood recipe, Eat With Phindile",
+    "url": "https://your-nestify-url.nestify.app/mussels.html"
+  }
+  </script>
+</body>
+</html>
+
 
 
 
