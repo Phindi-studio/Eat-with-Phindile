@@ -14,64 +14,97 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<!-- Google tag (gtag.js) -->
+
+<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QRPK1MCBG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-2QRPK1MCBG');
 </script>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Eat With Phindile</h1>
-      <nav role="navigation" aria-label="Main Menu">
-        <a href="blog.html">Blog</a>
-        <a href="index.html">Recipes</a>
-        <a href="volunteer.html">Volunteer Writer</a>
-        <a href="work.html">Work With Me</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<header>
+  <div class="container">
+    <h1>Eat With Phindile</h1>
+    <nav role="navigation" aria-label="Main Menu">
+      <a href="blog.html">Blog</a>
+      <a href="index.html">Recipes</a>
+      <a href="volunteer.html">Volunteer Writer</a>
+      <a href="work.html">Work With Me</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="reviews-section">
+    <h2>Latest Restaurant Reviews & Food Stories</h2>
+
+    <div class="reviews-grid">
+
+      <!-- FireRoom Review -->
+      <article class="review-card">
+        <div class="img-container">
+          <img src="images/Fireroom.jpg" alt="FireRoom restaurant interior with flaming dishes" loading="lazy" />
+        </div>
+        <h3>FireRoom</h3>
+        <p class="rating" aria-label="5 out of 5 stars">★★★★★</p>
+        <p>
+          Watching the food flamed right at the table set the tone for the entire meal.
+          The fusion flavours were rich and memorable, and despite the busy atmosphere,
+          the staff remained warm and attentive. A dining experience worth repeating.
+        </p>
+        <a href="fireroom.html" class="cta-button">Read Full Review</a>
+      </article>
+
+      <!-- Braai Summary Card -->
+      <article class="review-card">
+        <div class="img-container">
+          <img src="images/braai.jpg" alt="Local township braai meat served with pap and salads" loading="lazy" />
+        </div>
+        <h3>What Real Local Braai Meat Near Me Looks Like</h3>
+        <p>
+          A real look at township braai culture — from boerewors and steak to chicken,
+          pap, and classic sides. No restaurant setting, no stock photos, just honest,
+          home-style braai exactly as it’s cooked and served locally.
+        </p>
+        <a href="braai.html" class="cta-button">View Braai Story</a>
+      </article>
+
     </div>
-  </header>
 
-  <main class="container">
-    <section class="reviews-section">
-      <h2>Latest Restaurant Reviews</h2>
-      
-      <div class="reviews-grid">
-        <!-- Review Card 1 -->
-        <article class="review-card">
-          <div class="img-container">
-            <img src="images/Fireroom.jpg" alt="FireRoom restaurant interior with flaming dishes" loading="lazy" />
-          </div>
-          <h3>FireRoom</h3>
-          <p class="rating" aria-label="5 out of 5 stars">★★★★★</p>
-          <p>It was exciting to watch the food flamed right at our table — a real show to start the meal. The dishes were full of rich, delightful fusion flavors, and every bite was amazing. Even though the place was packed and buzzing, the staff stayed friendly and helpful, quickly finding us a spot when no tables were free. The warm, cozy atmosphere made it easy to relax and enjoy the evening. I’ll definitely be going back.</p>
-          <a href="fireroom.html" class="cta-button">Read Full Review</a>
-        </article>
-      </div>
-      <section aria-label="Festive Food Lovers Tips">
-  <h3>Festive Food Lovers Tips</h3>
-  <p>This festive season, food lovers can enjoy a variety of delicious meals without stress. Planning your dishes carefully, exploring different flavors, and balancing indulgence with smart preparation can make holiday meals truly memorable. Even simple choices, like combining your favorite fast-food treats or experimenting with festive sides, can create a fun and satisfying experience for you and your loved ones.</p>
-  <a href="food-lovers-secret.html" class="cta-button">Read Full Tips & Ideas</a>
-</section>
-      
-      <section aria-label="Perfect Pasta Tips"> 
-  <h3>Perfect Pasta Tips</h3>
-  <p>Making pasta that’s consistently delicious is easier than most people think. By following a few simple techniques—like salting your water correctly, stirring during the first minute, and reserving a bit of pasta water—you can elevate any meal. Whether pairing it with seafood, a creamy sauce, or a quick weeknight topping, these steps ensure perfect pasta every time.</p>
-  <a href="pasta.html" class="cta-button">Read Full Tips & Recipe</a>
-
-      <p class="coming-soon"> Stay tuned—more blogs coming soon....</p>
+    <!-- Festive Tips -->
+    <section aria-label="Festive Food Lovers Tips">
+      <h3>Festive Food Lovers Tips</h3>
+      <p>
+        This festive season, enjoy delicious meals without stress.
+        With smart planning, flavour balance, and simple preparation,
+        you can create memorable holiday dishes that everyone enjoys.
+      </p>
+      <a href="food-lovers-secret.html" class="cta-button">Read Full Tips & Ideas</a>
     </section>
-  </main>
 
-  <footer>
+    <!-- Pasta Tips -->
+    <section aria-label="Perfect Pasta Tips">
+      <h3>Perfect Pasta Tips</h3>
+      <p>
+        Perfect pasta comes down to a few simple techniques.
+        Salting your water properly, stirring early, and saving pasta water
+        can transform even the simplest dish into something special.
+      </p>
+      <a href="pasta.html" class="cta-button">Read Full Tips & Recipe</a>
+    </section>
+
+    <p class="coming-soon">Stay tuned — more blogs coming soon…</p>
+
+  </section>
+</main>
+
+<footer>
   <div class="container footer-container">
-
     <p class="footer-text">&copy; 2025 Eat With Phindile</p>
 
     <div class="footer-social">
@@ -81,27 +114,8 @@
       <a href="https://www.instagram.com/phindi_mlilwana/" target="_blank" aria-label="Instagram">
         <img src="images/iconsinstagram.png" alt="Instagram">
       </a>
-      <!----
-      <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-        <img src="icons/youtube.svg" alt="YouTube">
-      </a>-->
     </div>
   </div>
 </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
